@@ -30,7 +30,11 @@ function App() {
       <header className="App-header">
         <h1>Kyambade's react project</h1>
       </header>
-      <ExpenseItem></ExpenseItem>
+      <ExpenseItem
+        title={expenses[0].title}
+        amount={expenses[0].amount}
+        date={expenses[0].date}
+      ></ExpenseItem>
     </div>
   );
 }
